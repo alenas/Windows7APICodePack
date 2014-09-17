@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shell", "Shell.csproj", "{AA0C00CB-8699-4F37-BFAE-40CA87ACC06D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CodeAnalysisDebug|Any CPU = CodeAnalysisDebug|Any CPU
+		CodeAnalysisDebug|x64 = CodeAnalysisDebug|x64
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA0C00CB-8699-4F37-BFAE-40CA87ACC06D}.CodeAnalysisDebug|Any CPU.ActiveCfg = CodeAnalysisDebug|Any CPU
+		{AA0C00CB-8699-4F37-BFAE-40CA87ACC06D}.CodeAnalysisDebug|Any CPU.Build.0 = CodeAnalysisDebug|Any CPU
+		{AA0C00CB-8699-4F37-BFAE-40CA87ACC06D}.CodeAnalysisDebug|x64.ActiveCfg = CodeAnalysisDebug|x64
+		{AA0C00CB-8699-4F37-BFAE-40CA87ACC06D}.CodeAnalysisDebug|x64.Build.0 = CodeAnalysisDebug|x64
+		{AA0C00CB-8699-4F37-BFAE-40CA87ACC06D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA0C00CB-8699-4F37-BFAE-40CA87ACC06D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA0C00CB-8699-4F37-BFAE-40CA87ACC06D}.Debug|x64.ActiveCfg = Debug|x64
+		{AA0C00CB-8699-4F37-BFAE-40CA87ACC06D}.Debug|x64.Build.0 = Debug|x64
+		{AA0C00CB-8699-4F37-BFAE-40CA87ACC06D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA0C00CB-8699-4F37-BFAE-40CA87ACC06D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA0C00CB-8699-4F37-BFAE-40CA87ACC06D}.Release|x64.ActiveCfg = Release|x64
+		{AA0C00CB-8699-4F37-BFAE-40CA87ACC06D}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
