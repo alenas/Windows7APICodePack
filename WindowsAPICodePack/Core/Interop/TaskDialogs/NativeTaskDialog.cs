@@ -90,11 +90,16 @@ namespace Microsoft.WindowsAPICodePack.Dialogs
                 bool checkBoxChecked;
 
                 // Here is the way we use "vanilla" P/Invoke to call TaskDialogIndirect().  
-                HResult hresult = TaskDialogNativeMethods.TaskDialogIndirect(
-                    nativeDialogConfig,
-                    out selectedButtonId,
-                    out selectedRadioButtonId,
-                    out checkBoxChecked);
+                // Hier Anpassungen, gemäss StackOverflow: http://stackoverflow.com/questions/1415270/c-comctl32-dll-version-6-in-debugger
+                HResult hresult;
+                using (new EnableThemingInScope(true))
+                {
+                    hresult = TaskDialogNativeMethods.TaskDialogIndirect(
+                        nativeDialogConfig,
+                        out selectedButtonId,
+                        out selectedRadioButtonId,
+                        out checkBoxChecked);
+                }
 
                 if (CoreErrorHelper.Failed(hresult))
                 {
