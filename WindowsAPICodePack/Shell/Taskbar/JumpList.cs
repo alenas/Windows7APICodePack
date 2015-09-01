@@ -30,6 +30,18 @@ namespace Microsoft.WindowsAPICodePack.Taskbar
         }
 
         /// <summary>
+        /// Create a JumpList for an application's taskbar button.
+        /// </summary>
+        /// <returns>A new JumpList that is associated with the app id of the main application window</returns>
+        /// <remarks>If there are any other child (top-level) windows for this application and they don't have
+        /// a specific JumpList created for them, they all will share the same JumpList as the main application window.
+        /// In order to have a individual JumpList for a top-level window, use the overloaded method CreateJumpListForIndividualWindow.</remarks>
+        public static JumpList CreateJumpList(string appId)
+        {
+            return new JumpList(appId);
+        }
+
+        /// <summary>
         /// Create a JumpList for the application's taskbar button.
         /// </summary>
         /// <param name="appId">Application Id for the individual window. This must be unique for each top-level window in order to have a individual JumpList.</param>
