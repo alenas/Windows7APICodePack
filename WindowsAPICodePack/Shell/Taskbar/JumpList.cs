@@ -18,7 +18,7 @@ namespace Microsoft.WindowsAPICodePack.Taskbar
     {
 
         /// <summary>
-        /// Create a JumpList for the application's taskbar button.
+        /// Create a JumpList for the application's taskbar button.a
         /// </summary>
         /// <returns>A new JumpList that is associated with the app id of the main application window</returns>
         /// <remarks>If there are any other child (top-level) windows for this application and they don't have
@@ -214,7 +214,7 @@ namespace Microsoft.WindowsAPICodePack.Taskbar
         /// </summary>
         /// <param name="appID">Application Id to use for this instace.</param>
         internal JumpList(string appID)
-            : this(appID, TaskbarManager.Instance.OwnerHandle)
+            : this(appID, IntPtr.Zero)
         {
         }
 

@@ -260,7 +260,8 @@ namespace Microsoft.WindowsAPICodePack.Taskbar
         public void SetApplicationIdForSpecificWindow(IntPtr windowHandle, string appId)
         {
             // Left as instance method, to follow singleton pattern.
-            TaskbarNativeMethods.SetWindowAppId(windowHandle, appId);
+            if (windowHandle != IntPtr.Zero)
+                TaskbarNativeMethods.SetWindowAppId(windowHandle, appId);
         }
 
         /// <summary>
@@ -274,7 +275,8 @@ namespace Microsoft.WindowsAPICodePack.Taskbar
         public void SetApplicationIdForSpecificWindow(System.Windows.Window window, string appId)
         {
             // Left as instance method, to follow singleton pattern.
-            TaskbarNativeMethods.SetWindowAppId((new WindowInteropHelper(window)).Handle, appId);
+            if (window != null)
+                TaskbarNativeMethods.SetWindowAppId((new WindowInteropHelper(window)).Handle, appId);
         }
 
         /// <summary>
