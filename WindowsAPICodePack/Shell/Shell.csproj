@@ -87,7 +87,7 @@
     <DefineConstants>CODE_ANALYSIS;DEBUG;TRACE</DefineConstants>
     <DocumentationFile>bin\Debug\Microsoft.WindowsAPICodePack.Shell.XML</DocumentationFile>
     <DebugType>full</DebugType>
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <CodeAnalysisLogFile>bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
     <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
     <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
@@ -105,7 +105,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <Optimize>true</Optimize>
     <DebugType>none</DebugType>
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <CodeAnalysisLogFile>bin\Release\Microsoft.WindowsAPICodePack.Shell.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
     <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
     <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
@@ -303,6 +303,7 @@
     <Compile Include="Taskbar\JumpListLink.cs" />
     <Compile Include="Taskbar\JumpListSeparator.cs" />
     <Compile Include="Taskbar\TabbedThumbnailClosedEventArgs.cs" />
+    <Compile Include="Taskbar\TabbedThumbnailClosingEventArgs.cs" />
     <Compile Include="Taskbar\TabbedThumbnailScreenCapture.cs" />
     <Compile Include="Taskbar\TabbedThumbnailManager.cs" />
     <Compile Include="Taskbar\TabbedThumbnailBitmapRequestedEventArgs.cs" />
