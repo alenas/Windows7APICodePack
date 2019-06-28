@@ -20,10 +20,7 @@ namespace Tests
             {
                 if (info.PropertyType == typeof(StockIcon))
                 {                    
-                    Assert.DoesNotThrow(new Assert.ThrowsDelegate(() =>
-                    {
-                        StockIcon test = (StockIcon)info.GetValue(icons, null);
-                    }));
+                    StockIcon test = (StockIcon)info.GetValue(icons, null);
                 }
             }
         }

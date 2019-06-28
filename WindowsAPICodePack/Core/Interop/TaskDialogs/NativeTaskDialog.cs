@@ -535,7 +535,7 @@ namespace Microsoft.WindowsAPICodePack.Dialogs
             foreach (TaskDialogNativeMethods.TaskDialogButton button in structs)
             {
                 Marshal.StructureToPtr(button, currentPtr, false);
-                currentPtr = (IntPtr)((int)currentPtr + Marshal.SizeOf(button));
+                currentPtr = (IntPtr)((long)currentPtr + Marshal.SizeOf(button));
             }
 
             return initialPtr;

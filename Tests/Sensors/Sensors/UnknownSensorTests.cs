@@ -17,7 +17,7 @@ namespace Tests
             Assert.Throws<SensorPlatformException>(() => { bool b = us.AutoUpdateDataReport; }); // BUG: Inconsistency with the rest of the API
             Assert.Throws<NullReferenceException>(() => { Guid? g = us.CategoryId; });
             Assert.Throws<NullReferenceException>(() => { SensorConnectionType? t = us.ConnectionType; });
-            Assert.Equal<SensorReport>(null, us.DataReport);   // BUG: Inconsistency
+            Assert.Null(us.DataReport);
             Assert.Throws<NullReferenceException>(() => { string s = us.Description; });
             Assert.Throws<NullReferenceException>(() => { string s = us.DevicePath; });
             Assert.Throws<NullReferenceException>(() => { string s = us.FriendlyName; });

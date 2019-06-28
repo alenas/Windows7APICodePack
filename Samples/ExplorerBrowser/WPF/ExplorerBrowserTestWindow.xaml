@@ -352,6 +352,8 @@
                         QueryPane="{Binding IsChecked, ElementName=lbiQueryPane, Mode=TwoWay, Converter={StaticResource tristateConverter} }"
                         
                         NavigationTarget="{Binding SelectedItem, ElementName=KnownFoldersList, Mode=OneWay}"
+                        
+                        Background="Brown"
                         />
                 </Border>
                 

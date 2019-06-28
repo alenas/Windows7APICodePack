@@ -41,7 +41,7 @@ namespace Tests
 
             PropertyKey key = new PropertyKey(guid, property);
 
-            Assert.Equal<string>(
+            Assert.Equal(
                 "{" + guid.ToString() + "}, " + property.ToString(),
                 key.ToString());
         }

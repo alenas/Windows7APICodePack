@@ -15,7 +15,7 @@ namespace Tests
         public void Construction(string sensorTypeGuid)
         {
             SensorDescriptionAttribute a = new SensorDescriptionAttribute(sensorTypeGuid);
-            Assert.Equal<string>(sensorTypeGuid, a.SensorType);
+            Assert.Equal(sensorTypeGuid, a.SensorType);
         }
     }
 }
